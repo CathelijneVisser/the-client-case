@@ -1,1 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
+:root {
+  font-size: min(calc(1em + 1vw), 4em);
+}
+
+body {
+  --layout-spacing: max(8vh, 3em);
+}
+
+body > * + * {
+  margin-top: var(--layout-spacing);
+}
