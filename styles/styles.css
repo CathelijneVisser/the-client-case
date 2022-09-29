@@ -1,16 +1,59 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: Rajdhani, semi, bold;
 }
 
 :root {
   font-size: min(calc(1em + 1vw), 4em);
+  --layout-spacing: max(8vh, 3em);
+  --purple: #524dd0;
+  --blue: #00ffec;
+  --white: #fff;
 }
 
-body {
-  --layout-spacing: max(8vh, 3em);
-}
 
 body > * + * {
   margin-top: var(--layout-spacing);
+}
+
+
+
+
+
+
+header{
+  text-align: center;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+body{
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li{
+  padding: 2em;
+  border-bottom: solid 1px var(--purple);
+  text-size-adjust: ;
+  
+}
+
+
+/*knop*/
+
+#button{
+    background-color: var(--blue);
+    border-radius: 5px;
+    width: 5em;
+    height: 2em;
+    border: none;
 }
