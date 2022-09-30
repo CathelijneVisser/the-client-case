@@ -65,44 +65,8 @@ h3 {
   border: none;
   flex-grow: 1;
 }
-/*
-#{
-  grid-row: ;
-}
 
-#{
-  grid-row: ;
-}
-
-#{
-  grid-row: ;
-}
-
-#{
-  grid-row: ;
-}
-
-#{
-  grid-row: ;
-}
-
-#{
-  grid-row: ;
-}
-
-#{
-  grid-row: ;
-}
-
-#{
-  grid-row: ;
-}
-*/
-
-body.expand1 {
-  background-color: hotpink;
-}
-
-body.expand2 {
-  background-color: royalblue;
+.tijn expand {
+  height: ;
+  transition: 1s;
 }
