@@ -27,8 +27,6 @@ header {
   text-align: center;
   background-color: var(--purple);
   color: var(--white);
-  grid-column: 1 / span 3;
-  grid-row: 1;
   width: 100%;
 }
 
@@ -49,12 +47,19 @@ li {
   justify-self: center;
   display: flex;
   overflow-x: hidden;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 h3 {
   width: 60%;
 }
+
+.more-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
 /*knop*/
 
 .button {
@@ -66,7 +71,28 @@ h3 {
   flex-grow: 1;
 }
 
-.tijn expand {
-  height: ;
-  transition: 1s;
+.expand .more-info {
+  max-height: 400px;
+}
+
+.meer {
+  position: relative;
+}
+.minder {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+}
+
+.expand .meer {
+  visibility: hidden;
+}
+
+.expand .minder {
+  visibility: visible;
+}
+
+.m-m {
+  position: relative;
 }
