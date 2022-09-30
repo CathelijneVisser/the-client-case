@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "Rajdhani";
+  src: url("../assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
+    url("../assets/fonts/Rajdhani-SemiBold.woff") format("woff");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: Rajdhani, semi, bold;
+  font-family: Rajdhani, sans-serif;
 }
 
 :root {
@@ -13,102 +19,51 @@
   --white: #fff;
 }
 
-
 body > * + * {
   margin-top: var(--layout-spacing);
 }
 
-
-
-
-
-
-header{
+header {
   text-align: center;
   background-color: var(--purple);
   color: var(--white);
   grid-column: 1 / span 3;
   grid-row: 1;
+  width: 100%;
 }
 
-body{
+body {
   overflow-y: scroll;
-  display: grid;
-  grid-template-columns: [first] 90px [seccond] auto [third] 90px [end];
-  grid-template-rows: [first] var(--grid-spacing) [second] var(--grid-spacing) [third] var(--grid-spacing) [fourth] var(--grid-spacing) [five] var(--grid-spacing) [sixth] var(--grid-spacing) [seventh] var(--grid-spacing) [eight] var(--grid-spacing) [nineth] var(--grid-spacing) [end];
-} 
+}
 
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
 
-li{
+li {
   padding: 2em;
   border-bottom: solid 1px var(--purple);
-  text-size-adjust: ;
   grid-row: 1 / span 2;
   justify-self: center;
+  display: flex;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
 }
 
-.Tijn{
-  grid-column: 1 / span 2;
-  grid-row:  2;
-  background-color: hotpink;
+h3 {
+  width: 60%;
 }
-
-.Sarah{
-  grid-column: 3;
-  
-}
-
-.Manon{
-  grid-column: 4;
-  
-}
-
-.Ahmed{
-  grid-column: 5;
-  
-}
-
-.Olivia{
-  grid-column: 6;
-  
-}
-
-.Karel{
-  grid-column: 7;
-  
-}
-
-.Wafa{
-  grid-column: 8;
-  
-}
-
-.Witcher{
-  grid-column: 9;
-  
-}
-
-
-
-
-
-
-
-
 /*knop*/
 
-.button{
-    background-color: var(--blue);
-    border-radius: 5px;
-    width: min((15vw)15em);
-    height: 2em;
-    border: none;
-    grid-column: ;
+.button {
+  background-color: var(--blue);
+  border-radius: 5px;
+  width: min((15vw) 15em);
+  height: 2em;
+  border: none;
+  flex-grow: 1;
 }
 /*
 #{
@@ -144,14 +99,10 @@ li{
 }
 */
 
-body.expand1{
- 
+body.expand1 {
   background-color: hotpink;
-  
 }
 
-body.expand2{
- 
+body.expand2 {
   background-color: royalblue;
-  
 }
