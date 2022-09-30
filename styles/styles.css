@@ -24,10 +24,16 @@ body > * + * {
 }
 
 header {
+  display: flex;
   text-align: center;
   background-color: var(--purple);
   color: var(--white);
   width: 100%;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
 }
 
 body {
@@ -78,19 +84,17 @@ h3 {
 .meer {
   position: relative;
 }
+
 .minder {
-  position: absolute;
-  visibility: hidden;
-  top: 0;
-  right: 0;
+  display: none;
 }
 
 .expand .meer {
-  visibility: hidden;
+  display: none;
 }
 
 .expand .minder {
-  visibility: visible;
+  display: block;
 }
 
 .m-m {
