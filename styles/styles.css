@@ -29,6 +29,7 @@ header {
   background-color: var(--purple);
   color: var(--white);
   width: 100%;
+  height: 84px;
 }
 
 .weg {
@@ -38,6 +39,10 @@ header {
 .logo {
   height: 50px;
   width: auto;
+}
+
+.logo1 {
+  display: none;
 }
 
 body {
@@ -58,6 +63,7 @@ li {
   display: flex;
   overflow-x: hidden;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 h3 {
@@ -66,8 +72,16 @@ h3 {
 
 .more-info {
   max-height: 0;
+  width: 100%;
   overflow: hidden;
   transition: 1s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.straat {
+  height: auto;
+  width: 7em;
 }
 
 /*knop*/
@@ -75,14 +89,15 @@ h3 {
 .button {
   background-color: var(--blue);
   border-radius: 5px;
-  width: min((15vw) 15em);
+  width: min(15vw, 15em);
   height: 2em;
   border: none;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .expand .more-info {
   max-height: 400px;
+  padding-top: 1em;
 }
 
 .meer {
@@ -110,5 +125,28 @@ h3 {
 @media (min-width: 600px) {
   header {
     justify-content: space-between;
+  }
+
+  ul {
+    /* display: grid;
+    grid-template-collums: 1fr 1fr; */
+  }
+
+  .tijn {
+  }
+
+  .button {
+    width: 5em;
+    height: auto;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo1 {
+    display: block;
+    width: auto;
+    height: 84px;
   }
 }
