@@ -125,6 +125,12 @@ h3 {
   position: relative;
 }
 
+
+
+
+
+
+
 /* responsive maken */
 
 @media (min-width: 600px) {
@@ -191,4 +197,5 @@ h3 {
     width: 5em;
     height: auto;
   }
+
 }
