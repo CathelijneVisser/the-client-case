@@ -144,6 +144,12 @@ a {
 	color: black;
 }
 
+.logo3   {
+		display: block;
+		width: auto;
+		height: 84px;
+	}
+
 /* responsive maken */
 
 @media (min-width: 900px) {
