@@ -1,196 +1,174 @@
 @font-face {
-  font-family: "Rajdhani";
-  src: url("../assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
-    url("../assets/fonts/Rajdhani-SemiBold.woff") format("woff");
+	font-family: "Rajdhani";
+	src: url("../assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
+		url("../assets/fonts/Rajdhani-SemiBold.woff") format("woff");
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: Rajdhani, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Rajdhani, sans-serif;
 }
 
 :root {
-  font-size: min(calc(1em + 1vw), 4em);
-  --layout-spacing: max(8vh, 3em);
-  --grid-spacing: calc(var(--layout-spacing) * 2);
-  --purple: #524dd0;
-  --blue: #00ffec;
-  --white: #fff;
-  line-height: 140%;
+	font-size: min(calc(1em + 1vw), 4em);
+	--layout-spacing: max(8vh, 3em);
+	--grid-spacing: calc(var(--layout-spacing) * 2);
+	--purple: #524dd0;
+	--blue: #00ffec;
+	--white: #fff;
+	line-height: 140%;
+	--black: #110f2a;
 }
 
 body > * + * {
-  margin-top: var(--layout-spacing);
+	margin-top: var(--layout-spacing);
 }
 
 header {
-  display: flex;
-  text-align: center;
-  background-color: var(--purple);
-  color: var(--white);
-  width: 100%;
-  height: 84px;
-  justify-content: space-between;
+	display: flex;
+	text-align: center;
+	background-color: var(--purple);
+	color: var(--white);
+	width: 100%;
+	height: 84px;
+	justify-content: space-between;
 }
 
 h1 {
-  padding-top: 0.5em;
+	padding-top: 0.5em;
 }
 .weg {
-  color: var(--purple);
+	color: var(--purple);
 }
 
 .logo {
-  height: 50px;
-  width: auto;
+	height: 50px;
+	width: auto;
 }
 
 .logo1 {
-  display: none;
+	display: none;
 }
 
 body {
-  overflow-y: scroll;
+	overflow-y: scroll;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
 }
 
 li {
-  padding: 2em;
-  border-bottom: solid 1px var(--purple);
-  grid-row: 1 / span 2;
-  justify-self: center;
-  display: flex;
-  overflow-x: hidden;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	padding: 2em;
+	border-bottom: solid 1px var(--purple);
+	grid-row: 1 / span 2;
+	justify-self: center;
+	display: flex;
+	overflow-x: hidden;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 h3 {
-  width: 60%;
+	width: 60%;
 }
 
 .more-info {
-  max-height: 0;
-  width: 100%;
-  overflow: hidden;
-  transition: 1s;
-  display: flex;
-  justify-content: space-between;
+	max-height: 0;
+	width: 100%;
+	overflow: hidden;
+	transition: 1s;
+	display: flex;
+	justify-content: space-between;
 }
 
 .straat {
-  height: auto;
-  width: 7em;
+	height: auto;
+	width: 7em;
 }
 
 /*knop*/
 
 .button {
-  background-color: var(--blue);
-  border-radius: 5px;
-  width: min(15vw, 15em);
-  height: 2em;
-  border: none;
-  /* flex-grow: 1; */
+	background-color: var(--blue);
+	border-radius: 5px;
+	width: min(15vw, 15em);
+	height: 2em;
+	border: none;
 }
 
 .expand .more-info {
-  max-height: 400px;
-  padding-top: 1em;
+	max-height: 400px;
+	padding-top: 1em;
 }
 
 .meer {
-  position: relative;
+	position: relative;
 }
 
 .minder {
-  display: none;
+	display: none;
 }
 
 .expand .meer {
-  display: none;
+	display: none;
 }
 
 .expand .minder {
-  display: block;
+	display: block;
 }
 
 .m-m {
-  position: relative;
+	position: relative;
+}
+
+footer {
+	background-color: var(--black);
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer {
+	align-self: center;
+}
+
+a {
+	border: solid 2px var(--blue);
+	border-radius: 0.5em;
+	background-color: var(--blue);
+	align-self: center;
+	margin: 1em;
+	color: black;
 }
 
 /* responsive maken */
 
 @media (min-width: 900px) {
-  .logo {
-    display: none;
-  }
+	.logo {
+		display: none;
+	}
 
-  .logo1 {
-    display: block;
-    width: auto;
-    height: 84px;
-  }
+	.logo1 {
+		display: block;
+		width: auto;
+		height: 84px;
+	}
 
-  ul {
-    /* display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "tijn sarah"
-      "manon ahmed"
-      "olivia karel"
-      "wafa witcher";
-    align-items: start; */
-    display: flex;
-    flex-wrap: wrap;
-  }
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-  li {
-    border-right: solid 1px var(--purple);
-    width: 50%;
-  }
-  /* 
-  .tijn {
-    grid-area: tijn;
-  }
+	li {
+		border-right: solid 1px var(--purple);
+		width: 50%;
+	}
 
-  .sarah {
-    grid-area: sarah;
-  }
-
-  .manon {
-    grid-area: manon;
-  }
-
-  .ahmed {
-    grid-area: ahmed;
-  }
-
-  .olivia {
-    grid-area: olivia;
-  }
-
-  .karel {
-    grid-area: karel;
-  }
-
-  .wafa {
-    grid-area: wafa;
-  }
-
-  .witcher {
-    grid-area: witcher;
-  } */
-
-  .button {
-    width: 5em;
-    height: 2em;
-  }
+	.button {
+		width: 5em;
+		height: 2em;
+	}
 }
