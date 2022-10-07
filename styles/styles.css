@@ -125,15 +125,9 @@ h3 {
   position: relative;
 }
 
-
-
-
-
-
-
 /* responsive maken */
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .logo {
     display: none;
   }
@@ -145,7 +139,7 @@ h3 {
   }
 
   ul {
-    display: inline-grid;
+    /* display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -153,14 +147,16 @@ h3 {
       "manon ahmed"
       "olivia karel"
       "wafa witcher";
-    /* align-items: start; */
+    align-items: start; */
+    display: flex;
+    flex-wrap: wrap;
   }
 
   li {
     border-right: solid 1px var(--purple);
-    width: 100%;
+    width: 50%;
   }
-
+  /* 
   .tijn {
     grid-area: tijn;
   }
@@ -191,11 +187,10 @@ h3 {
 
   .witcher {
     grid-area: witcher;
-  }
+  } */
 
   .button {
     width: 5em;
-    height: auto;
+    height: 2em;
   }
-
 }
