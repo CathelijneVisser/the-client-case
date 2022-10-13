@@ -15,7 +15,7 @@ De website heeft eerst alleen de namen van de smart spaces en de knop zodat je n
 ![Screenshot (9)](https://user-images.githubusercontent.com/112855711/195319071-f7c36ae6-7e06-4d74-8ad3-8bda39b1298e.png)
 ![opengeklapd](https://user-images.githubusercontent.com/112855711/195623073-4e44e9f3-91d5-4920-a239-6d79538b19cb.png)
 
-cathelijnevisser.github.io/the-client-case/
+https://cathelijnevisser.github.io/the-client-case/
 
 <h3>Kenmerken</h3>
 
