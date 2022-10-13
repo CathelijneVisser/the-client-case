@@ -19,3 +19,18 @@ https://cathelijnevisser.github.io/the-client-case/
 
 <h3>Kenmerken</h3>
 
+html
+-header
+-ul
+-li
+-img
+-footer
+
+css
+-var
+-media
+-display flex
+-overflow
+
+javascript
+-addEventListener
