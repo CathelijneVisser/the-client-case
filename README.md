@@ -29,11 +29,14 @@ html
 </ul>
 
 css
+<ul>
 <li>var</li>
 <li>media</li>
 <li>display flex</li>
 <li>overflow</li>
+</ul>
 
 javascript
+<ul>
 <li>addEventListener</li>
-</li>
+</ul>
