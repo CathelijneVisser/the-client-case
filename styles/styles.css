@@ -25,20 +25,37 @@ body > * + * {
 	margin-top: var(--layout-spacing);
 }
 
-header {
-	display: grid;
+nav {
+	display: flex;
 	text-align: center;
 	background-color: var(--purple);
 	color: var(--white);
 	width: 100%;
 	height: 84px;
-	grid-template-columns: 1fr 3fr;
-	grid-template-rows: 1fr 1fr;
+	justify-content: space-between;
+	align-items: center;
 }
 
-nav {
-	grid-column: ;
+/* menu */
+
+.menu-button {
+	background: none;
+	border: none;
+	height: 84px;
+	margin-right: 0.5rem;
 }
+
+.menu-button span {
+	background-color: var(--black);
+	height: 2.5px;
+	width: 1.5rem;
+	display: block;
+	z-index: 11;
+	margin: 5px;
+	border-radius: 1rem;
+}
+
+/* header */
 
 h1 {
 	padding-top: 0.5em;
@@ -56,6 +73,15 @@ h1 {
 body {
 	overflow-y: scroll;
 }
+
+/* inleiding */
+.inleiding h2 {
+	padding: 1rem;
+}
+
+/* kaart */
+
+/* overzicht */
 
 ul {
 	list-style-type: none;
